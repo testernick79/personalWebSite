@@ -1,0 +1,35 @@
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+  #headshot:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    padding : 10px;
+  }
+
+.jumbotron {
+  background-color: lightskyblue;
+}
+
+
+#li:hover {
+  color: lightblue;
+  -webkit-transform: scale3d(1);
+  transform: scaleX(1);
+}
+
+#fb:hover {
+  color: lightblue;
+  -webkit-transform: scale3d(1);
+  transform: scaleX(1);
+}
+
+#gh:hover {
+  color: lightblue;
+  -webkit-transform: scale3d(1);
+  transform: scaleX(1);
+  
+}
+
