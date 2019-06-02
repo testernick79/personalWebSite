@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
     <link rel="icon" href="https://getbootstrap.com/favicon.ico">
 
-    <title>Sticky Footer Template for Bootstrap</title>
+    <title>Nick L Fonseca</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/">
 
@@ -23,18 +23,19 @@
 
     <!-- Custom styles for this template -->
     <link href="https://getbootstrap.com/docs/4.0/examples/sticky-footer/sticky-footer.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
     <nav id="bar" class="navbar navbar-expand-md navbar-dark sticky-top bg-dark">
         <div id="navBar" class="flex-center">
 
             <a class="movement" href="https://github.com/testernick79"><i class="fa fa-3x fa-github-square"></i></a>
-            <a class="movement" href="https://www.linkedin.com/in/nicholasfonseca/"><i class="fa fa-3x fa-facebook"></i></a>
-            <a class="movement" href="https://www.facebook.com/nicholas.fonseca1"><i class="fa fa-3x fa-linkedin"></i></a>
+            <a class="movement" href="https://www.linkedin.com/in/nicholasfonseca/"><i
+                    class="fa fa-3x fa-facebook"></i></a>
+            <a class="movement" href="https://www.facebook.com/nicholas.fonseca1"><i
+                    class="fa fa-3x fa-linkedin"></i></a>
 
         </div>
 
@@ -45,32 +46,75 @@
 
         <h1 class="display-3 text-center">Nick L. Fonseca</h1>
         <p class="text-center">QA Engineer / Full Stack Developer</p>
-        <div class="text-center">
-            <img src="headshot.PNG" id="headshot" class="rounded">
-        </div>
-
 
     </main>
-    <div class="section col-2">
-        <h3 class="text-center">Front-End Tech Skills</h3>
-        <ul class="list-group">
 
-            <li class="list-group-item text-center">JavaScript</li>
-            <li class="list-group-item text-center">CSS</li>
-            <li class="list-group-item text-center">HTML</li>
-            <li class="list-group-item text-center">GIT</li>
-            <li class="list-group-item text-center">BootStrap</li>
-            <li class="list-group-item text-center">Foundation</li>
-        </ul>
+    <div class="container">
+        <div class="card-deck mb-4 text center">
+            <div class="card mb-4 shadow-sm">
+                <img class="card-image-top rounded text-center" src="headshot.PNG" alt="card image cap">
 
+                <div class="card-body">
+                    <p class="my-0 font-weight-normal">
+                        <h2>I'm Nick,<br></h2>I enjoy to code and desgn great looking interfaces and apps. Take
+                        a
+                        look at my repos section to see more!
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+                <h3 class="text-center">Front-End Tech Skills</h3>
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+
+                    <li class="list-group-item text-center">JavaScript</li>
+                    <li class="list-group-item text-center">CSS</li>
+                    <li class="list-group-item text-center">HTML</li>
+                    <li class="list-group-item text-center">GIT</li>
+                    <li class="list-group-item text-center">BootStrap</li>
+                    <li class="list-group-item text-center">Foundation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card mb-4 shadow-md">
+            <div class="card-header">
+                <h4 class="my-0 font-weight-normal">My Repos</h4>
+            </div>
+            <img src="GH.png" class="card-ing-top">
+            <div class='card-body'>
+                
+                <button id='GITHUBapi-button' onclick='loadRepo()'>Click for Repos</button>
+                <br>
+                <ul class="card-text" id='gitRepositories'></ul>
+                <br>
+            </div>
+        </div>
     </div>
+    </div>
+
+    <!-- <div class='card col-2'>
+        <img src="GH.png" class="card-ing-top">
+        <div class='card-body'>
+            <h2 class='card-title'>My Repos</h2>
+            <button id='GITHUBapi-button' onclick='loadRepo()'>Click for Repos</button>
+            <br>
+            <ul class="card-text" id='gitRepositories'></ul>
+            <br>
+        </div>
+    </div> -->
 
     <footer class="footer bg-dark">
         <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
+            <span class="text-muted text-center fa fa-envelope"> Contact: nick-fonseca@company123.com</span>
         </div>
     </footer>
     <script src="script.js"></script>
+    <script src="profileData.json"></script>
 </body>
 
 </html>
